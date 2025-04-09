@@ -84,6 +84,17 @@ An agent must be able to understand the problem and have enough information to r
 
 ---
 
+## 🐳 Run from DockerHub
+
+You can run this service directly from DockerHub without building it:
+
+```bash
+docker pull paulroewer/swe-bench-lite-api:latest
+docker run -p 8080:8080 paulroewer/swe-bench-lite-api
+```
+
+---
+
 ## 📜 License
 
 The underlying SWE-bench dataset is licensed under the terms provided by [HuggingFace](https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite).  
