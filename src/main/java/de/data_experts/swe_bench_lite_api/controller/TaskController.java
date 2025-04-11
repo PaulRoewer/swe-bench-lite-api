@@ -1,10 +1,8 @@
-package de.data_experts.sweverifier.controller;
+package de.data_experts.swe_bench_lite_api.controller;
 
-import de.data_experts.sweverifier.model.Task;
-import de.data_experts.sweverifier.service.TaskService;
+import de.data_experts.swe_bench_lite_api.model.Task;
+import de.data_experts.swe_bench_lite_api.service.TaskService;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/task")

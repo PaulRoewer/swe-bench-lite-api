@@ -1,4 +1,4 @@
-package de.data_experts.sweverifier.model;
+package de.data_experts.swe_bench_lite_api.model;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnore;

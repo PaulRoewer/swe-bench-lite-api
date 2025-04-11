@@ -19,7 +19,7 @@ The source dataset is [SWE-bench Lite](https://huggingface.co/datasets/princeton
 ./mvnw spring-boot:run
 ```
 
-Or run via IntelliJ: right-click `SweTaskServiceApplication.java` → Run
+Or run via IntelliJ: right-click `SweTaskServiceApiApplication.java` → Run
 
 ---
 

@@ -1,6 +1,6 @@
-package de.data_experts.sweverifier.service;
+package de.data_experts.swe_bench_lite_api.service;
 
-import de.data_experts.sweverifier.model.Task;
+import de.data_experts.swe_bench_lite_api.model.Task;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.PostConstruct;
