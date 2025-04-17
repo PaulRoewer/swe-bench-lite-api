@@ -13,16 +13,6 @@ The source dataset is [SWE-bench Lite](https://huggingface.co/datasets/princeton
 
 ---
 
-## 🚀 Run the Service
-
-```bash
-./mvnw spring-boot:run
-```
-
-Or run via IntelliJ: right-click `SweTaskServiceApiApplication.java` → Run
-
----
-
 ## 🌐 REST API Overview
 
 ### `GET /task/{index}`  
