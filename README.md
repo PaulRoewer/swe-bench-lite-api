@@ -1,4 +1,4 @@
-# SWE-Bench-Lite Task Service
+# SWE-Bench-Lite API - Task Service
 
 A lightweight REST API for serving real-world bug-fixing tasks derived from the [SWE-bench Lite](https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite) benchmark dataset.  
 This service is designed for integration with autonomous agent systems (e.g., CrewAI, Autogen, LangChain) that require realistic prompts including repository metadata, commit references, and patch diffs.
@@ -75,6 +75,7 @@ The `/task/{index}` endpoint returns a single SWE-bench task with full metadata 
 
 Agents interacting with this API require a minimal subset of fields to understand and solve the given task. The following fields are considered **essential**:
 
+- `instance_id`: the swe bench identifier for this testcase, important for evaluation with hardness.
 - `Problem_statement`: the core bug description or natural language prompt.
 - `git_clone`: a convenience string for checking out the correct state.
 - `FAIL_TO_PASS`: list of tests the patch is expected to fix.
@@ -90,7 +91,7 @@ You can run this service directly from DockerHub without building it:
 
 ```bash
 docker pull paulroewer/swe-bench-lite-api:latest
-docker run -p 8080:8080 paulroewer/swe-bench-lite-api
+docker run -p 8081:8080 paulroewer/swe-bench-lite-api
 ```
 
 ---
