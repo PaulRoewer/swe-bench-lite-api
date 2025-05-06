@@ -15,12 +15,12 @@ The source dataset is [SWE-bench Lite](https://huggingface.co/datasets/princeton
 
 ## 🌐 REST API Overview
 
-### `GET /task/{index}`  
+### `GET /task/index/{index}`  
 Returns a task using its artificial numeric index (1-based).
 
 ---
 
-# 🧾 JSON Structure of `GET /task/{index}`
+# 🧾 JSON Structure of `GET /task/index/{index}`
 
 The `/task/{index}` endpoint returns a single SWE-bench task with full metadata from the original benchmark plus helper fields. Here's a typical structure:
 
